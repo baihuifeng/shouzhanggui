@@ -1,0 +1,49 @@
+//
+//  CommentClass.pch
+//  Student
+//
+//  Created by 葬花桥 on 2017/3/20.
+//  Copyright © 2017年 葬花桥. All rights reserved.
+//
+
+#ifndef CommentClass_pch
+#define CommentClass_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "GeneralDefine.h"
+#import <UIKit/UIKit.h>
+#import "MJExtension.h"
+#import "HHTabbarViewController.h"
+#import "UILabel+YBAttributeTextTapAction.h"
+#import "MBProgressHUD.h"
+#import "NSString+stringSizeCalculate.h"
+#import "NSString+Check.h"
+#import "NSStringVerify.h"
+#import "SegmentView.h"
+#import "CommentFile.h"
+#import "JYCountButton.h"
+#import "Tool.h"
+#import "SZGMenuFile.h"
+#import "NetApiManager.h"
+#import "NSString+MD5.h"
+//#import "LZRequestUrlManager.h"
+//#import "LZCommonManager.h"
+//#import "LZManagerChoose.h"
+//#import "JYAccountTool.h"
+//#import "JYAccount.h"
+#import "UIImageView+WebCache.h"
+#import <SDWebImage/UIButton+WebCache.h>
+#import "NSString+stringSizeCalculate.h"
+#import "MJRefresh.h"
+
+#import "IQKeyboardManager.h"
+#import "Hong.h"
+#import "QIAOTextView.h"
+#import "JYImagePickerController.h"
+
+
+
+
+#endif /* CommentClass_pch */

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SZGHomeThirdCell" rowHeight="144" id="KGk-i7-Jjw" customClass="SZGHomeThirdCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="143.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkJ-2E-rEA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLl-BF-SQv">
+                                <rect key="frame" x="113" y="12" width="95" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Kr7-Fn-76M"/>
+                                    <constraint firstAttribute="width" constant="95" id="P5k-2V-QZz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="添加商品" image="DP_Add_icon">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdm-yV-BgJ">
+                                <rect key="frame" x="0.0" y="49.5" width="320" height="0.5"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="Op4-98-QoX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="4dG-PE-buE"/>
+                            <constraint firstAttribute="bottom" secondItem="Qdm-yV-BgJ" secondAttribute="bottom" id="9fZ-a3-Izq"/>
+                            <constraint firstAttribute="trailing" secondItem="Qdm-yV-BgJ" secondAttribute="trailing" id="Iot-Yo-cAf"/>
+                            <constraint firstItem="pLl-BF-SQv" firstAttribute="centerX" secondItem="FkJ-2E-rEA" secondAttribute="centerX" id="Jud-ri-EqM"/>
+                            <constraint firstItem="Qdm-yV-BgJ" firstAttribute="leading" secondItem="FkJ-2E-rEA" secondAttribute="leading" id="OAQ-dP-MMJ"/>
+                            <constraint firstItem="pLl-BF-SQv" firstAttribute="top" secondItem="FkJ-2E-rEA" secondAttribute="top" constant="12" id="g4r-Ew-UfP"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DZi-fG-Oka">
+                        <rect key="frame" x="0.0" y="50" width="320" height="94"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2gP-K3-QrY">
+                            <size key="itemSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="N6p-wP-oTP"/>
+                            <outlet property="delegate" destination="-1" id="VSC-Ai-2rE"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DZi-fG-Oka" firstAttribute="top" secondItem="FkJ-2E-rEA" secondAttribute="bottom" id="Fii-Tw-6o9"/>
+                    <constraint firstItem="FkJ-2E-rEA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="JJ1-88-nbE"/>
+                    <constraint firstItem="DZi-fG-Oka" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="gCa-l5-jPr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DZi-fG-Oka" secondAttribute="bottom" constant="-8.5" id="mdD-p1-Uo7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DZi-fG-Oka" secondAttribute="trailing" constant="-8" id="opO-5B-3vX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FkJ-2E-rEA" secondAttribute="trailing" constant="-8" id="pXZ-2T-fUb"/>
+                    <constraint firstItem="FkJ-2E-rEA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="vRk-XU-6i4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="collectionView" destination="DZi-fG-Oka" id="3XI-dl-SH2"/>
+            </connections>
+            <point key="canvasLocation" x="-240" y="2"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DP_Add_icon" width="21" height="21"/>
+    </resources>
+</document>

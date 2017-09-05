@@ -17,6 +17,7 @@ PODS:
   - IQKeyboardManager (4.0.11)
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.13)
+  - MJRefresh (3.0.8)
   - RealReachability (1.1.9):
     - RealReachability/Connection (= 1.1.9)
     - RealReachability/Ping (= 1.1.9)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - IQKeyboardManager (~> 4.0.4)
   - MBProgressHUD (~> 0.9.1)
   - MJExtension (~> 3.0.10)
+  - MJRefresh (~> 3.0.6)
   - RealReachability (~> 1.1.8)
   - RTRootNavigationController (~> 0.5.22)
   - SDWebImage (~> 3.7.3)
@@ -45,11 +47,12 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
   RTRootNavigationController: 153e538439fa20faec706019b04375f6c6fabeb6
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   YBAttributeTextTapAction: 650ff36251479f8cfc7b5dd8fb62587c538ce502
 
-PODFILE CHECKSUM: f75e8b860bb8f8ce20b584ca2b8990f0002a58ba
+PODFILE CHECKSUM: aae29b95f5183ba97a8555ad39eab46d91165af7
 
 COCOAPODS: 1.2.0.rc.1

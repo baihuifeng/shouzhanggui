@@ -8,5 +8,5 @@ pod 'MJExtension', '~> 3.0.10'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'YBAttributeTextTapAction'
 pod 'IQKeyboardManager', '~> 4.0.4'
-#pod 'MJRefresh', '~> 3.0.6'
+pod 'MJRefresh', '~> 3.0.6'
 end
